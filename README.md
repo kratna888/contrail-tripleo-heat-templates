@@ -375,7 +375,7 @@ cd
 
 ## virt-customize compute overcloud image
 For DPDK the compute image must be modified. User/password for RH subscription must be provided, also '/tmp/dpdk/contrail.repo' must be populated with the correct repo contents. Example of such a file:
-
+```
 [Contrail]
  name=Contrail Repo
  baseurl=${contrail_repo}
@@ -383,7 +383,7 @@ For DPDK the compute image must be modified. User/password for RH subscription m
  gpgcheck=0
  protect=1
  metadata_expire=30
-
+```
 ```
 cd ~/images
 cp overcloud-full.qcow2 overcloud-full-dpdk.qcow2
